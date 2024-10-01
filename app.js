@@ -27,7 +27,7 @@ class Student extends Person {
         super(name, age, occupation, major);
     }
 }
-const student = new Student("Diana Rose", 20, "Student", "Programming");
+const student = new Student("Mariel", 19, "Student", "Programming");
 console.log("Name: " + student.name);
 console.log("Age: " + student.age);
 console.log("Occupation: " + student.occupation);
