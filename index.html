@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person and Student Classes</title>
+    <script>
+        class Person {
+            constructor(name) {
+                this.name = name;
+            }
+            sayName() {
+                console.log(this.name);
+            }
+        }
+
+        class Student extends Person {
+            constructor(name, rollNumber) {
+                super(name);
+                this.rollNumber = rollNumber;
+            }
+            logDetails() {
+                console.log(`Name: ${this.name}, Roll number: ${this.rollNumber}`);
+            }
+            sayName() {
+                console.log("From Student");
+                super.sayName();
+            }
+        }
+
+        window.onload = function() {
+            var student = new Student("Mariel", 1);
+            student.logDetails();
+            student.sayName();
+        };
+    </script>
+</head>
+<body>
+    <h1>Check the Console for Output</h1>
+    <p>The details of the student will be logged in the console.</p>
+</body>
+</html>
