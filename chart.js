@@ -8,13 +8,13 @@ const data = {
             label: 'Female',
             data: [10, 30, 39, 20, 25, 34,],
             borderColor: 'rgba(255, 99, 132, 1)',
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            backgroundColor: 'rgb(188, 124, 124)',
         },
         {
             label: 'Male',
             data: [18, 33, 22, 19, 11, 39, 30],
             borderColor: 'rgba(54, 162, 235, 1)',
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            backgroundColor: 'rgb(228, 192, 135)',
         }
     ]
 };
@@ -27,7 +27,7 @@ const config = {
         plugins: {
             title: {
                 display: true,
-                text: 'Male and Female Attendance Line Chart'
+                text: 'Birthday Line Chart'
             }
         },
         scales: {
